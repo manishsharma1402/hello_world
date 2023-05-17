@@ -23,3 +23,4 @@ jobs:
       - name: Sync files with S3 bucket
         run: |
           aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/DAG/github/
+          
